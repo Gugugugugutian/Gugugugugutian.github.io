@@ -2,8 +2,21 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="main.css">
-<meta charset="utf-8">
-<title>Start exploring...</title>
+  <meta charset="utf-8">
+  <title>Start exploring...</title>
+  <script>
+    //doesn't work to change color, why?
+    window.onload = function() {
+      setInterval(function() {
+        console.log("The setInterval function is running!");
+        var date = new Date();
+        var seconds = date.getSeconds();
+        var color = Math.floor(seconds / 60 * 255).toString(16).padStart(2, "0");
+        var textColor = "#" + color + color + color;
+        document.getElementById("lar").style.color = textColor;
+      }, 1000);
+    };
+  </script>
 </head>
 
 <body>
@@ -71,10 +84,10 @@
           <p id="lar"><a href="https://twitter.com/">Twitter</a></p>
         </td>
         <td>
-          <p id="lar"><a href="https://ieltspracticeonline.com/">IELTS Practice</a></p>
+          <p id="lar"><a href="">null</a></p>
         </td>
         <td>
-          <p id="lar"><a href="">null</a></p>
+          <p id="lar"><a href="https://www.bilibili.com/">bilibili</a></p>
         </td>
         <td>
           <p id="lar"><a href="">null</a></p>
@@ -83,19 +96,19 @@
       
       <tr>
         <td>
-          <p id="lar"><a href="">null</a></p>
+          <p id="lar"><a href="https://leetcode.cn/problemset/all/">leetcode</a></p>
+        </td>
+        <td>
+          <p id="lar"><a href="https://nav.yibook.org/">Yibook</a></p>
+        </td>
+        <td>
+          <p id="lar"><a href="https://ieltspracticeonline.com/">IELTS Practice</a></p>
         </td>
         <td>
           <p id="lar"><a href="">null</a></p>
         </td>
         <td>
-          <p id="lar"><a href="">null</a></p>
-        </td>
-        <td>
-          <p id="lar"><a href="">null</a></p>
-        </td>
-        <td>
-          <p id="lar"><a href="">null</a></p>
+          <p id="lar"><a href="">null</a>1</p>
         </td>
       </tr>
     </table>
@@ -103,5 +116,40 @@
     <p>He said one day you'll leave this world behind, so live a life you will remember.</p>
     <p>--Avicii</p>
 
+    <ul>
+      <li id="lar">More websites here</li>
+      <li><a href="/">link</a> Discription in one sentence.</li>
+      <li><a href="/">link</a> Discription in one sentence.</li>
+      <li><a href="/">link</a> Discription in one sentence.</li>
+      <li><a href="/">link</a> Discription in one sentence.</li>
+      <li><a href="/">link</a> Discription in one sentence.</li>
+      <li><a href="/">link</a> Discription in one sentence.</li>
+      <li><a href="/">link</a> Discription in one sentence.</li>
+      <li><a href="/">link</a> Discription in one sentence.</li>
+    </ul>
+
+    <div id="bottom">
+      <ul>
+        <li>By <a href="https://github.com/Gugugugugutian">gugugugugutian</a></li>
+        <li>Chatgpt helped me a lot in html and javescript.</li>
+        <li>Background picture from: <a href="images6.alphacoders.com">images6.alphacoders.com</a></li>
+      </ul>
+      <p>Thx a lot :)</p>
+    </div>
+
+    <script>
+      var w=window.innerWidth;
+      var h=window.innerHeight;
+      for (var i = 0; i < 50; i++) {
+        var star = document.createElement("div");
+        star.className= "star";
+        star.style.top = Math.random() * h + "px";
+        star.style.left = Math.random() * w + "px";
+
+        // add the star element to the #stars container
+        document.getElementById("stars").appendChild(star);
+      }
+    </script>
+    
 </body>
 </html>
