@@ -26,6 +26,7 @@ Visit at: https://gugugugugutian.github.io/a-chrome-homepage/
 <tr>
 ~~~
 就成功地把第一个网站Github改成小红书的官网了。其他的也是类似这样的，想改哪个都可以自行修改。
+**但是不认识的东西千万不能乱动！！！
 
 ## Current version: 
 20230326 Version 0.1
