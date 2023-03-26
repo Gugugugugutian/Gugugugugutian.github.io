@@ -12,6 +12,8 @@ https://gugugugugutian.github.io/a-chrome-homepage/
 - Links to the author, source pictures in the end.
 - Some animations (Not implemented temporarily).
 
+
+# History: 
 20230325 First upload
 ![image](https://user-images.githubusercontent.com/104246706/227719283-a1a87520-beef-4406-8dfe-77fe483fbd48.png)
 - Show ip when proxy detected.
