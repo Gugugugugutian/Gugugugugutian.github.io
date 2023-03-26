@@ -4,7 +4,7 @@ A chrome homepage created for personal use.
 Visit at:
 https://gugugugugutian.github.io/a-chrome-homepage/
 
-Current version: 
+## Current version: 
 20230326 Version 0.1
 ![image](https://user-images.githubusercontent.com/104246706/227775510-65a6a147-8b7e-40b8-9ea1-8162defe8b54.png)
 - Adjust websites according to personal needs.
