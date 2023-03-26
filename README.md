@@ -1,6 +1,8 @@
-# a-chrome-homepage
-A chrome homepage created for personal use. 
+# a-chrome-homepage 一个Chrome浏览器主页
+根据本人（武汉大学学生）的个人使用习惯，制作的一个主要自用的浏览器主页。
+A chrome homepage created for personal use, according to a WHU student's campus life.
 
+网页在此：
 Visit at:
 https://gugugugugutian.github.io/a-chrome-homepage/
 
@@ -13,7 +15,7 @@ https://gugugugugutian.github.io/a-chrome-homepage/
 - Some animations (Not implemented temporarily).
 
 
-# History: 
+## History: 
 20230325 First upload
 ![image](https://user-images.githubusercontent.com/104246706/227719283-a1a87520-beef-4406-8dfe-77fe483fbd48.png)
 - Show ip when proxy detected.
