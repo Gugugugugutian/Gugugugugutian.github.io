@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="stylesheet" type="text/css" href="main.css">
   <meta charset="utf-8">
   <title>Start exploring...</title>
-  <script>
+  <!-- <script>
     //doesn't work to change color, why?
-    window.onload = function() {
-      setInterval(function() {
+    window.onload = function () {
+      setInterval(function () {
         console.log("The setInterval function is running!");
         var date = new Date();
         var seconds = date.getSeconds();
@@ -16,100 +17,102 @@
         document.getElementById("lar").style.color = textColor;
       }, 1000);
     };
-  </script>
+  </script> -->
+  <script src="star.js"></script>
 </head>
 
 <body>
-    <h1>Welcome to the browser!</h1>
-    <h2 id="datetime"></h2>
-    <script>
-  // 获取当前的日期和时间
-  var now = new Date();
+  <h1>Welcome to the browser!</h1>
+  <h2 id="datetime"></h2>
+  <script>
+    // 获取当前的日期和时间
+    var now = new Date();
 
-  // 创建一个包含日期、时间和星期的字符串
-  var datetime = now.getFullYear() + "/" + (now.getMonth()+1) + "/" + now.getDate() + " ";
-  // datetime += now.getHours() + ":" + now.getMinutes() + " ";
-  datetime += getWeekday(now.getDay());
+    // 创建一个包含日期、时间和星期的字符串
+    var datetime = now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " ";
+    // datetime += now.getHours() + ":" + now.getMinutes() + " ";
+    datetime += getWeekday(now.getDay());
 
-  // 将日期、时间和星期的字符串插入到 <h2> 元素中
-  document.getElementById("datetime").innerHTML = datetime;
+    // 将日期、时间和星期的字符串插入到 <h2> 元素中
+    document.getElementById("datetime").innerHTML = datetime;
 
-  // 获取当前日期的星期名称
-  function getWeekday(day) {
-    var weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    return weekdays[day];
-  }
-    </script>
+    // 获取当前日期的星期名称
+    function getWeekday(day) {
+      var weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      return weekdays[day];
+    }
+  </script>
 
-    <p id="ip-info"></p>
-    <script>
+  <p id="ip-info"></p>
+  <script>
     // 使用fetch API获取当前IP地址和归属地
     fetch("https://ipapi.co/json/")
-    .then(response => response.json())
-    .then(data => {
-    // 更新段落中的内容，显示IP地址和归属地
-    const ipInfo = document.getElementById("ip-info");
-    ipInfo.textContent = `Proxy detected. Your ip is <${data.ip}>, locating in: ${data.city}, ${data.region}, ${data.country}.`;
-    })
-    .catch(error => {
-    // 如果发生错误，显示错误信息
-    document.getElementById('ipinfo').innerHTML = 'Error: Could not retrieve IP address information.';
-    });
-    </script>
+      .then(response => response.json())
+      .then(data => {
+        // 更新段落中的内容，显示IP地址和归属地
+        const ipInfo = document.getElementById("ip-info");
+        ipInfo.textContent =
+          `Proxy detected. Your ip is <${data.ip}>, locating in: ${data.city}, ${data.region}, ${data.country}.`;
+      })
+      .catch(error => {
+        // 如果发生错误，显示错误信息
+        document.getElementById('ipinfo').innerHTML = 'Error: Could not retrieve IP address information.';
+      });
+  </script>
 
-<div id="pad">
-       
-  <!-- 只是用于留白一个20px高的区域 -->
-</div>
+  <div id="pad">
 
-    <table id="cen">
-      <tr id="line1">
-        <td id="col1">
-          <p id="lar"><a href="https://github.com/">Github</a></p>
-          <p>知名编程网站</p>
-        </td>
-        <td id="col2">
-          <p id="lar"><a href="http://google.com/">Google</a></p>
-          <p>谷歌搜索</p>
-        </td>
-        <td id="col3">
-          <p id="lar"><a href="http://bing.com/">bing</a></p>
-          <p>微软必应搜索</p>
-        </td>
-        <td id="col4">
-          <p id="lar"><a href="https://chat.openai.com/chat">Chatgpt</a></p>
-          <p>知名AI语言模型</p>
-        </td>
-        <td id="col5">
-          <p id="lar"><a href="https://ikuuu.co/user#">ikuuu VPN</a></p>
-          <p>每日签到领流量</p>
-        </td>
-      </tr>
+    <!-- 只是用于留白一个20px高的区域 -->
+  </div>
 
-      <tr id="line2">
-        <td id="col1">
-          <p id="lar"><a href="https://www.youtube.com/">Youtube</a></p>
-          <p>墙外知名视频网站</p>
-        </td>
-        <td id="col2">
-          <p id="lar"><a href="https://twitter.com/">Twitter</a></p>
-          <p>推特</p>
-        </td>
-        <td id="col3">
-          <p id="lar"><a href="https://ehall.whu.edu.cn/new/index.html#/">WHU ehall</a></p>
-          <p>武汉大学信息门户</p>
-        </td>
-        <td id="col4">
-          <p id="lar"><a href="https://www.bilibili.com/">bilibili</a></p>
-          <p>哔哩哔哩</p>
-        </td>
-        <td id="col5">
-          <p id="lar"><a href="https://leetcode.cn/problemset/all/">leetcode</a></p>
-          <p>力扣代码学习平台</p>
-        </td>
-      </tr>
-      
-      <!-- <tr>
+  <table id="cen">
+    <tr id="line1">
+      <td id="col1">
+        <p id="lar"><a href="https://github.com/">Github</a></p>
+        <p>知名编程网站</p>
+      </td>
+      <td id="col2">
+        <p id="lar"><a href="http://google.com/">Google</a></p>
+        <p>谷歌搜索</p>
+      </td>
+      <td id="col3">
+        <p id="lar"><a href="http://bing.com/">bing</a></p>
+        <p>微软必应搜索</p>
+      </td>
+      <td id="col4">
+        <p id="lar"><a href="https://chat.openai.com/chat">Chatgpt</a></p>
+        <p>知名AI语言模型</p>
+      </td>
+      <td id="col5">
+        <p id="lar"><a href="https://ikuuu.co/user#">ikuuu VPN</a></p>
+        <p>每日签到领流量</p>
+      </td>
+    </tr>
+
+    <tr id="line2">
+      <td id="col1">
+        <p id="lar"><a href="https://www.youtube.com/">Youtube</a></p>
+        <p>墙外知名视频网站</p>
+      </td>
+      <td id="col2">
+        <p id="lar"><a href="https://twitter.com/">Twitter</a></p>
+        <p>推特</p>
+      </td>
+      <td id="col3">
+        <p id="lar"><a href="https://ehall.whu.edu.cn/new/index.html#/">WHU ehall</a></p>
+        <p>武汉大学信息门户</p>
+      </td>
+      <td id="col4">
+        <p id="lar"><a href="https://www.bilibili.com/">bilibili</a></p>
+        <p>哔哩哔哩</p>
+      </td>
+      <td id="col5">
+        <p id="lar"><a href="xuexi.html">More...</a></p>
+        <p>更多学习有关内容</p>
+      </td>
+    </tr>
+
+    <!-- <tr>
         <td id="col1">
           <p id="lar"><a href=""></a>-</p>
         </td>
@@ -127,54 +130,42 @@
         </td>
       </tr> -->
 
-    </table>
+  </table>
 
-    <div id="pad">
-       
-      <!-- 只是用于留白一个20px高的区域 -->
-    </div>
+  <div id="pad">
 
-    <p>He said one day you'll leave this world behind, so live a life you will remember.</p>
-    <p>--Avicii</p>
+    <!-- 只是用于留白一个20px高的区域 -->
+  </div>
 
+  <p>He said one day you'll leave this world behind, so live a life you will remember.</p>
+  <p>--Avicii</p>
+
+  <ul>
+    <li id="lar">More websites here:</li>
+    <li><a href="https://cslabcg.whu.edu.cn/indexcs/simple.jsp?loginErr=0">WHU Cgshare</a> 武汉大学计算机学院希冀平台</li>
+    <li><a href="https://oir.whu.edu.cn/index.htm">WHU Exchange</a> 武汉大学国际交流部</li>
+    <li><a href="https://nav.yibook.org/">Yibook</a> 易书网/找电子书网站的一个导航页面</li>
+    <li><a href="https://github.com/freefq/free">Freefq(github)</a> 免费通过V2ray实现科学上网</li>
+    <li><a href="https://github.com/openwhu/OpenWHU">OpenWHU(github)</a> 武汉大学课程资料开放平台（非官方）</li>
+    <li><a href="https://ieltspracticeonline.com/">IELTS Practice</a> 国外免费的雅思考试做题平台</li>
+    <li><a href="https://s.ringjoys.com">WHU Enquire</a> 武汉大学课程给分情况查询（非官方）</li>
+    <li><a href="https://leetcode.cn/problemset/all/">leetcode</a> 力扣中国官方网站，学习算法和编程</li>
+    <!-- <li><a href="/">link</a> Discription in one sentence.</li> -->
+    <!-- <li><a href="/">link</a> Discription in one sentence.</li> -->
+  </ul>
+
+  <div id="bottom">
     <ul>
-      <li id="lar">More websites here</li>
-      <li><a href="https://cslabcg.whu.edu.cn/indexcs/simple.jsp?loginErr=0">WHU Cgshare</a> 武汉大学计算机学院希冀平台</li>
-      <li><a href="https://oir.whu.edu.cn/index.htm">WHU Exchange</a> 武汉大学国际交流部</li>
-      <li><a href="https://nav.yibook.org/">Yibook</a> 易书网/找电子书网站的一个导航页面</li>
-      <li><a href="https://github.com/freefq/free">Freefq(github)</a> 免费通过V2ray实现科学上网</li>
-      <li><a href="https://github.com/openwhu/OpenWHU">OpenWHU(github)</a> 武汉大学课程资料开放平台（非官方）</li>
-      <li><a href="https://ieltspracticeonline.com/">IELTS Practice</a> 国外免费的雅思考试做题平台</li>
-      <li><a href="https://s.ringjoys.com">WHU Enquire</a> 武汉大学课程给分情况查询（非官方）</li>
-      <!-- <li><a href="/">link</a> Discription in one sentence.</li>
-      <li><a href="/">link</a> Discription in one sentence.</li>
-      <li><a href="/">link</a> Discription in one sentence.</li> -->
+      <li>By <a href="https://github.com/Gugugugugutian">gugugugugutian</a></li>
+      <li>Chatgpt helped me a lot in html and javescript.</li>
+      <li>Background picture from: <a href="images6.alphacoders.com">images6.alphacoders.com</a></li>
+      <!-- The line below this line is for local developing use: -->
+      <li>You may visit this site on the internet: <a href="https://gugugugugutian.github.io/a-chrome-homepage/">Click
+          here.</a></li>
     </ul>
-
-    <div id="bottom">
-      <ul>
-        <li>By <a href="https://github.com/Gugugugugutian">gugugugugutian</a></li>
-        <li>Chatgpt helped me a lot in html and javescript.</li>
-        <li>Background picture from: <a href="images6.alphacoders.com">images6.alphacoders.com</a></li>
-        <!-- The line below this line is for local developing use: -->
-        <li>You may visit this site on the internet: <a href="https://gugugugugutian.github.io/a-chrome-homepage/">Click here.</a></li>
-      </ul>
-      <p>Thx a lot :)</p>
-    </div>
-
-    <script>
-      var w=window.innerWidth;
-      var h=window.innerHeight;
-      for (var i = 0; i < 50; i++) {
-        var star = document.createElement("div");
-        star.className= "star";
-        star.style.top = Math.random() * h + "px";
-        star.style.left = Math.random() * w + "px";
-
-        // add the star element to the #stars container
-        document.getElementById("stars").appendChild(star);
-      }
-    </script>
-    
+    <p>Thx a lot :)</p>
+  </div>
+  <div id="stars"></div>
 </body>
+
 </html>

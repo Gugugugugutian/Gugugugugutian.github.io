@@ -67,7 +67,7 @@ a {
 ul  {
   list-style-type: none;
   background-color: rgba(25, 13, 36, 0.5);
-  margin-top: 10%;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -84,11 +84,9 @@ ul  {
   border-radius: 50%;
   width: 2px;
   height: 2px;
-  animation: shooting-star 5s ease-out infinite;
 }
 
-
-@keyframes shooting-star {
+/* @keyframes shooting-star {
   0% {
     opacity: 1;
     transform: translateX(0) translateY(0) rotate(0);
@@ -97,7 +95,7 @@ ul  {
     opacity: 0;
     transform: translateX(0) translateY(600px) rotate(720deg);
   }
-}
+} */
 
 
 
