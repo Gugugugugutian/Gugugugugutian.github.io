@@ -26,6 +26,12 @@ h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 24px;
   }
+h3{
+  color: rgb(238, 241, 53);
+}
+h4 {
+  margin-bottom: 5px;
+}
 p {
     margin: 2px;
     color: antiquewhite;
@@ -69,6 +75,8 @@ ul  {
   background-color: rgba(25, 13, 36, 0.5);
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #stars {
