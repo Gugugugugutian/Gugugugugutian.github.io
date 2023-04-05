@@ -89,7 +89,7 @@ ul  {
   height: auto;
 }
 #adjbutm5, #adjbut5, #adjbutm10, #adjbut10 {
-  width: auto;
+  width: 80%;
 }
 
 /* @keyframes shooting-star {
