@@ -28,9 +28,12 @@ h2 {
   }
 h3{
   color: rgb(238, 241, 53);
+  background-color: rgba(76, 12, 64, 0.5);
 }
 h4 {
   margin-bottom: 5px;
+  color: aliceblue;
+  background-color: rgba(76, 12, 64, 0.5);
 }
 p {
     margin: 2px;
@@ -72,6 +75,7 @@ a {
 }
 ul  {
   list-style-type: none;
+  /* list-style-position: outside; */
   background-color: rgba(25, 13, 36, 0.5);
   margin-top: 20px;
   margin-bottom: 20px;
@@ -98,6 +102,9 @@ ul  {
 }
 #adjbutm5, #adjbut5, #adjbutm10, #adjbut10 {
   width: 80%;
+}
+div{
+  background-color: rgba(255, 115, 0, 0.2);
 }
 
 /* @keyframes shooting-star {
