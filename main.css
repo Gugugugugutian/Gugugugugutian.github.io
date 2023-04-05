@@ -85,6 +85,12 @@ ul  {
   width: 2px;
   height: 2px;
 }
+#playadjust{
+  height: auto;
+}
+#adjbutm5, #adjbut5, #adjbutm10, #adjbut10 {
+  width: 20%;
+}
 
 /* @keyframes shooting-star {
   0% {
