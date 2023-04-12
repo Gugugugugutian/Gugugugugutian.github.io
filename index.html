@@ -55,7 +55,7 @@
         // 更新段落中的内容，显示IP地址和归属地
         const ipInfo = document.getElementById("ip-info");
         ipInfo.textContent =
-          `Proxy detected. Your ip is <${data.ip}>, locating in: ${data.city}, ${data.region}, ${data.country}.`;
+          `Your current ip is <${data.ip}>, locating in: ${data.city}, ${data.region}, ${data.country}.`;
       })
       .catch(error => {
         // 如果发生错误，显示错误信息
