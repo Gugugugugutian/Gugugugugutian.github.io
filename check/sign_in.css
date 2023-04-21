@@ -44,7 +44,7 @@ dialog{
 #bk {
   background-color: rgba(9, 20, 91, 0.549);
 }
-form{
+form {
   margin: 2px;
   font-size: 20px;
   color: aliceblue;
@@ -57,8 +57,8 @@ p {
 input,select {
   margin: 2px;
   color: rgba(9, 20, 91, 1);
-  height: 20px auto;
-  font-size: 19px;
+  height: 20px;
+  font-size: 20px;
 }
 form{
   background-color: rgba(25, 13, 36, 0.5);
