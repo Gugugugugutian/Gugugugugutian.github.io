@@ -3,25 +3,9 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8443962062541222"
-     crossorigin="anonymous"></script>
-  <!-- google ad -->
   <meta charset="utf-8">
   <title>Start exploring...</title>
-  <!-- <script>
-    //doesn't work to change color, why?
-    window.onload = function () {
-      setInterval(function () {
-        console.log("The setInterval function is running!");
-        var date = new Date();
-        var seconds = date.getSeconds();
-        var color = Math.floor(seconds / 60 * 255).toString(16).padStart(2, "0");
-        var textColor = "#" + color + color + color;
-        document.getElementById("lar").style.color = textColor;
-      }, 1000);
-    };
-  </script> -->
-  <!-- <script src="star.js"></script> -->
+  <script src="star.js"></script>
 </head>
 
 <body>
@@ -45,7 +29,7 @@
       return weekdays[day];
     }
   </script>
-
+  
   <p id="ip-info"></p>
   <script>
     // 使用fetch API获取当前IP地址和归属地
@@ -150,7 +134,7 @@
   <p>--Avicii</p>
 
   <ul>
-    <li id="lar">More websites here:</li>
+    <li><p id="lar">More Websites</p></li>
     <li><a href="https://jwgl.whu.edu.cn/xtgl">WHU teaching</a> 武汉大学教务管理系统</li>
     <li><a href="https://github.com/freefq/free">Freefq(github)</a> 免费通过V2ray实现科学上网</li>
     <li><a href="https://github.com/openwhu/OpenWHU">OpenWHU(github)</a> 武汉大学课程资料开放平台（非官方）</li>
@@ -174,6 +158,9 @@
     <p>Thx a lot :)</p>
   </div>
   <!-- <div id="stars"></div> -->
+  <script>
+    window.onload = setInterval(dynamic_color (), 1000);
+  </script>
 </body>
 
 </html>

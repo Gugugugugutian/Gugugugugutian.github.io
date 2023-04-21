@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="sign_in.css">
+    <meta charset="utf-8">
+    <title>英语学习签到模块</title>
+    <script src="check.js"></script>
+</head>
+
+<body>
+    <h1>
+        谁是卷王英语打卡
+    </h1>
+
+    <!-- show current time, update per second -->
+    <h2 id="datetime">loading...</h2>
+    <script>
+        window.onload = setInterval(function() {
+        var now = new Date();
+        var datenow = now.getFullYear() + "/" + now.getMonth() + "/" + now.getDate();
+        var hours = now.getHours().toString().padStart(2, "0");
+        var minutes = now.getMinutes().toString().padStart(2, "0");
+        var seconds = now.getSeconds().toString().padStart(2, "0");
+        var datetime = datenow + "   " + hours + ":" + minutes + ":" + seconds;
+        document.getElementById("datetime").innerHTML = "现在的时间是：" + datetime;
+        }, 1000);
+    </script>
+
+    
+    <form>
+        <h3>输入以下信息完成学习打卡</h3>
+        账号：<input type="password" name="pass"><br>
+        学习内容：
+        <input type="checkbox" name="cate" value="word">单词
+        <input type="checkbox" name="cate" value="listening">听力
+        <input type="checkbox" name="cate" value="reading">阅读
+        <input type="checkbox" name="cate" value="writing">写作
+        <input type="checkbox" name="cate" value="speaking">口语
+        <input type="checkbox" name="cate" value="grammar">语法<br>
+            <br>
+        留言：<input type="text" name="note"><br>
+        <input type="checkbox" name="conf" value="yes">我确实已经完成了学习任务，保证本次打卡的真实性。<br>
+
+        <input type="submit" value="提交打卡">
+    </form>
+
+    <ul>
+        <p id="bk">特别说明</p>
+        <li>打卡账户暂不开放注册，如有需要请联系作者。</li>
+        <li>一般用户仅支持当前时间的打卡，补卡需要补卡密码。</li>
+        <li>仅供本人日常小规模自用，请勿恶意提交。</li>
+    </ul>
+
+    <!-- current results -->
+    <ul>
+        <p id="bk">近期打卡记录</p>
+        <p id="1recording">loading...</p>
+        <p id="2recording">loading...</p>
+        <p id="3recording">loading...</p>
+        <p id="4recording">loading...</p>
+        <p id="5recording">loading...</p>
+        <li><button onclick="loadRecentRecords()">点击重新加载</button></li>
+    </ul>
+    <script>
+        //载入网页时立即读取一次打卡记录。
+        loadRecentRecords();
+    </script>
+    
+    <!-- more options -->
+    <tb id="more-ops">
+        <tr>
+            <td><button id="enquiry" onclick="showEnquiry()">完整打卡记录查询</button></td>
+            <td><button id="account" onclick="showAccount()">账号信息</button></td>
+            <td><button id="sign" onclick="showSign()">补卡登记</button></td>
+        </tr>
+    </tb>
+
+    <dialog id="d_enquire">
+        <h3>完整打卡记录查询</h3>
+        <p>该功能暂未开放，敬请期待。</p>
+        <form><!-- Add the enquiry form elements here --></form>
+        <button onclick="closeEnquire()">关闭</button>
+    </dialog>
+    <dialog id="d_account">
+        <h3>账号信息</h3>
+        <p>该功能暂未开放，敬请期待。</p>
+        <form><!-- Add the account form elements here --></form>
+        <button onclick="closeAccount()">关闭</button>
+    </dialog>
+    <dialog id="d_sign">
+        <h3>补卡登记</h3>
+        <p>该功能暂未开放，敬请期待。</p>
+        <form><!-- Add the sign form elements here --></form>
+        <button onclick="closeSign()">关闭</button>
+    </dialog>
+
+    <div id="bottom">
+        <ul>
+          <li id="bk">By <a href="https://github.com/Gugugugugutian">gugugugugutian</a></li>
+          <li>ChatGPT helped me a lot on coding.</li>
+          <li>Background picture from: <a href="https://images6.alphacoders.com">images6.alphacoders.com</a></li>
+        </ul>
+        <p>Thx a lot :)</p>
+    </div>
+</body>
