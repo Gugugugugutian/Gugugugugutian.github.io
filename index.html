@@ -10,27 +10,26 @@
 
 <body>
   <h1>Welcome to the browser!</h1>
-  <h2 id="datetime"></h2>
+  <h2 id="datetime">Loading...</h2>
   <script>
-    // 获取当前的日期和时间
+    window.onload = setInterval(function() {
     var now = new Date();
-
-    // 创建一个包含日期、时间和星期的字符串
-    var datetime = now.getFullYear() + "/" + (now.getMonth() + 1) + "/" + now.getDate() + " ";
-    // datetime += now.getHours() + ":" + now.getMinutes() + " ";
+    var datenow = now.getFullYear() + "/" + now.getMonth() + "/" + now.getDate();
+    var hours = now.getHours().toString().padStart(2, "0");
+    var minutes = now.getMinutes().toString().padStart(2, "0");
+    var seconds = now.getSeconds().toString().padStart(2, "0");
+    var datetime = datenow + "   " + hours + ":" + minutes + ":" + seconds + " ";
     datetime += getWeekday(now.getDay());
-
-    // 将日期、时间和星期的字符串插入到 <h2> 元素中
     document.getElementById("datetime").innerHTML = datetime;
-
-    // 获取当前日期的星期名称
+    document.getElementById("datetime").innerHTML = "现在的时间是：" + datetime;
+    }, 1000);
     function getWeekday(day) {
       var weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
       return weekdays[day];
     }
   </script>
   
-  <p id="ip-info"></p>
+  <p id="ip-info">Loading...</p>
   <script>
     // 使用fetch API获取当前IP地址和归属地
     fetch("https://ipapi.co/json/")
