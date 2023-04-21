@@ -2,7 +2,7 @@ body,html{
     height: 95%;
 }
 #pad{
-  height: 20px;
+  height: x-large;
 }
 body {
     background-color: black;
@@ -46,19 +46,19 @@ dialog{
 }
 form {
   margin: 2px;
-  font-size: 20px;
+  font-size: x-large;
   color: aliceblue;
 }
 p {
     margin: 2px;
     color: antiquewhite;
-    font-size: 20px;
+    font-size: x-large;
   }
 input,select {
   margin: 2px;
   color: rgba(9, 20, 91, 1);
-  height: 20px;
-  font-size: 20px;
+  height: x-large;
+  font-size: x-large;
 }
 form{
   background-color: rgba(25, 13, 36, 0.5);
@@ -84,7 +84,7 @@ td {
 li {
   color:antiquewhite;
   margin-top: 5px;
-  font-size: 20px;
+  font-size: x-large;
 }
 
 a {
@@ -95,8 +95,8 @@ ul  {
   list-style-type: none;
   /* list-style-position: outside; */
   background-color: rgba(25, 13, 36, 0.5);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: x-large;
+  margin-bottom: x-large;
   padding-left: 5px;
   padding-right: 5px;
 }
