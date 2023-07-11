@@ -2,175 +2,125 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <!-- <link href="https://cdn.staticfile.org/ionic/1.3.2/css/ionic.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/ionic/1.3.2/js/ionic.bundle.min.js"></script> -->
   <meta charset="utf-8">
   <title>Start exploring...</title>
-  <script src="star.js"></script>
+  <script src="search.js"></script>
 </head>
 
 <body>
-  <h1>Welcome to the browser!</h1>
-  <h2 id="datetime">Loading...</h2>
-  <script>
-    window.onload = setInterval(function() {
-    var now = new Date();
-    var datenow = now.getFullYear() + "/" + now.getMonth() + "/" + now.getDate();
-    var hours = now.getHours().toString().padStart(2, "0");
-    var minutes = now.getMinutes().toString().padStart(2, "0");
-    var seconds = now.getSeconds().toString().padStart(2, "0");
-    var datetime = datenow + "   " + hours + ":" + minutes + ":" + seconds + " ";
-    datetime += getWeekday(now.getDay());
-    document.getElementById("datetime").innerHTML = datetime;
-    document.getElementById("datetime").innerHTML = "现在的时间是：" + datetime;
-    }, 1000);
-    function getWeekday(day) {
-      var weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-      return weekdays[day];
-    }
-  </script>
+
+    <div class="topbar">
+        <div class="top-button" onclick="mail()">&#9993;</div>
+        <div class="topbar-title">gugugugugutian</div>
+        <div class="top-button" onclick="showSideBar()">&#9972;</div>
+    </div>
   
-  <p id="ip-info">Loading...</p>
-  <script>
-    // 使用fetch API获取当前IP地址和归属地
-    fetch("https://ipapi.co/json/")
-      .then(response => response.json())
-      .then(data => {
-        // 更新段落中的内容，显示IP地址和归属地
-        const ipInfo = document.getElementById("ip-info");
-        ipInfo.textContent =
-          `Your current ip is <${data.ip}>, locating in: ${data.city}, ${data.region}, ${data.country}.`;
-      })
-      .catch(error => {
-        // 如果发生错误，显示错误信息
-        document.getElementById('ipinfo').innerHTML = 'Error: Could not retrieve IP address information.';
-      });
-  </script>
+    <div class="container">
 
-  <div id="pad">
+        <div class="info">
+            <p id="datetime">Loading...</p>
+            <script>
+                window.onload = setInterval(function() {
+                var now = new Date();
+                var datenow = now.getFullYear() + "/" + (now.getMonth()+1) + "/" + now.getDate();
+                var hours = now.getHours().toString().padStart(2, "0");
+                var minutes = now.getMinutes().toString().padStart(2, "0");
+                var seconds = now.getSeconds().toString().padStart(2, "0");
+                var datetime = datenow + "   " + hours + ":" + minutes + ":" + seconds + " ";
+                datetime += getWeekday(now.getDay());
+                document.getElementById("datetime").innerHTML = datetime;
+                document.getElementById("datetime").innerHTML = "Now: " + datetime;
+                }, 1000);
+                function getWeekday(day) {
+                var weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+                return weekdays[day];
+                }
+            </script>
+            
+            <p id="ip-info">Loading...</p>
+            <script>
+                // 使用fetch API获取当前IP地址和归属地
+                fetch("https://ipapi.co/json/")
+                .then(response => response.json())
+                .then(data => {
+                    // 更新段落中的内容，显示IP地址和归属地
+                    const ipInfo = document.getElementById("ip-info");
+                    ipInfo.textContent =
+                    `Your current ip is <${data.ip}>, locating in: ${data.city}, ${data.region}, ${data.country}.`;
+                })
+                .catch(error => {
+                    // 如果发生错误，显示错误信息
+                    document.getElementById('ipinfo').innerHTML = 'Error: Could not retrieve IP address information.';
+                });
+            </script>
+        </div>
 
-    <!-- 只是用于留白一个20px高的区域 -->
-  </div>
+        <div class="main">
+            <div class="search">
+                <form id="searchForm" method="GET" target="_blank" action="https://www.google.hk/search" >
+                    <!-- <label for="searchQuery">Search:</label> -->
+                    <input type="text" id="searchQuery" name="q" required>
+                    <input type="submit" id="searchButton" value="Go" onclick="switchSearchEngine()">
+                </form>
 
-  <table id="cen">
-    <tr id="line1">
-      <td id="col1">
-        <p id="lar"><a href="https://github.com/">Github</a></p>
-        <p>知名开源编程网站</p>
-      </td>
-      <td id="col2">
-        <p id="lar"><a href="http://google.com/">Google</a></p>
-        <p>谷歌搜索</p>
-      </td>
-      <td id="col3">
-        <p id="lar"><a href="http://bing.com/">bing</a></p>
-        <p>微软必应搜索</p>
-      </td>
-      <td id="col4">
-        <p id="lar"><a href="https://chat.openai.com/chat">Chatgpt</a></p>
-        <p>知名AI语言模型</p>
-      </td>
-      <td id="col5">
-        <p id="lar"><a href="https://ikuuu.eu">ikuuu VPN</a></p>
-        <p>每日签到领流量</p>
-      </td>
-    </tr>
+                <input type="radio" id="googleRadio" name="selectEngine" value="google" checked>
+                <label for="googleRadio">Google</label>
+                <input type="radio" id="bingRadio" name="selectEngine" value="bing">
+                <label for="bingRadio">Bing</label>
+                <!-- <input type="radio" id="baiduRadio" name="selectEngine" value="baidu">
+                <label for="baiduRadio">Baidu</label> -->
+            </div>
+        </div>
 
-    <tr id="line2">
-      <td id="col1">
-        <p id="lar"><a href="https://www.youtube.com/">Youtube</a></p>
-        <p>墙外知名视频网站</p>
-      </td>
-      <td id="col2">
-        <p id="lar"><a href="https://twitter.com/">Twitter</a></p>
-        <p>推特</p>
-      </td>
-      <td id="col3">
-        <p id="lar"><a href="https://translate.google.com/">Translate</a></p>
-        <p>谷歌翻译网页版</p>
-      </td>
-      <td id="col4">
-        <p id="lar"><a href="https://www.bilibili.com/">bilibili</a></p>
-        <p>哔哩哔哩</p>
-        <td id="col5">
-          <p id="lar"><a href="https://leetcode.cn/problemset/all/">leetcode</a></p>
-          <p>算法学习和实践网站</p>
-        </td>
-      </td>
-      
-    </tr>
-
-    <tr>
-        <td id="col1">
-          <p id="lar"><a href="https://www.lib.whu.edu.cn/">图书馆</a></p>
-          <p>武汉大学图书馆主页</p>
-        </td>
-        <td id="col2">
-          <p id="lar"><a href="https://cslabcg.whu.edu.cn/indexcs/simple.jsp?loginErr=0">希冀平台</a></p>
-          <p>武大计算机实验平台</p>
-        </td>
-        <td id="col3">
-          <p id="lar"><a href="https://nav.yibook.org/">找电子书</a></p>
-          <p>易书网的电子书一个导航页面</p>
-        </td>
-        <td id="col4">
-          <p id="lar"><a href="https://ehall.whu.edu.cn/new/index.html#/">信息门户</a></p>
-          <p>武汉大学信息门户</p>
-        </td>
-        <td id="col5">
-          <p id="lar"><a href="xuexi.html">个人主页</a></p>
-          <p>学习有关内容及个人介绍</p>
-        </td>
-      </tr>
-
-  </table>
-
-  <div id="pad">
-
-    <!-- 只是用于留白一个20px高的区域 -->
-  </div>
-
-  <p>He said one day you'll leave this world behind, so live a life you will remember.</p>
-  <p>--Avicii</p>
-
-  <ul id="nav">
-    <li><h3>More Websites 更多网站</h3></li>
-    
-    <li><h4>Campus Life 校园生活</h4></li>
-    <li><a href="https://kxdz.whu.edu.cn">WHU Grade</a> 武汉大学成绩单打印</li>
-    <li><a href="https://jwgl.whu.edu.cn/xtgl">WHU teaching</a> 武汉大学教务管理系统</li>
-    <li><a href="https://github.com/openwhu/OpenWHU">OpenWHU(github)</a> 武汉大学课程资料开放平台（非官方）</li>
-    <li><a href="https://s.ringjoys.com">WHU Enquire</a> 武汉大学课程给分情况查询（非官方）</li>
-
-
-    <li><h4>Entertainment 娱乐休闲</h4></li>
-    <li><a href="https://space.bilibili.com/15611844/favlist?fid=2466132544">Music</a> 哔哩哔哩音乐收藏</li>
-    <li><a href="https://game.maj-soul.net/1/">Majsoul</a> 二次元魂系游戏雀魂麻将网页版</li>
-    <li><a href="https://online-go.com/">Online-Go</a> 免费在线围棋对战网站</li>
-    <li><a href="https://steamdb.info/">Steamdb</a> Steam平台历史价格查询网站</li>
-
-
-    <li><h4>Technical Tools 技术工具</h4></li>
-    <li><a href="https://github.com/freefq/free">Freefq(github)</a> 免费通过V2ray实现科学上网</li>
-    <li><a href="toeflplayer.html">Toeflplayer</a> 自建英语学习听力播放器（非商用）</li>
-
-    <!-- <li><a href="/">link</a> Discription in one sentence.</li> -->
-  </ul>
-
-  <div id="bottom">
-    <ul>
-      <li>By <a href="https://github.com/Gugugugugutian">gugugugugutian</a></li>
-      <li>ChatGPT helped me a lot on coding.</li>
-      <li>Background picture from: <a href="https://images6.alphacoders.com">images6.alphacoders.com</a></li>
-      <!-- The line below this line is for local developing use: -->
-      <li>You may visit this site on the internet: <a href="https://gugugugugutian.github.io/">Click
-          here.</a></li>
-    </ul>
-    <p>Thx a lot :)</p>
-  </div>
-  <!-- <div id="stars"></div> -->
-  <script>
-    window.onload = setInterval(dynamic_color (), 1000);
-  </script>
+        <div class="sidebar" id="sidebar">
+            <div class="row">
+                <div class="big" id="google">
+                    <a href="https://www.google.com.hk/">Google</a>
+                </div>
+                <div class="small" id="bing">
+                    <a href="https://bing.com/">Bing</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small" id="gpt">
+                    <a href="https://chat.openai.com/">GPT</a>
+                </div>
+                <div class="big" id="cg">
+                    <a href="https://cslabcg.whu.edu.cn/">希冀平台</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="big" id="lib">
+                    <a href="https://www.lib.whu.edu.cn/">图书馆</a>
+                </div>
+                <div class="small" id="grade">
+                    <a href="https://kxdz.whu.edu.cn/">成绩单</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small" id="score">
+                    <a href="https://s.ringjoys.com/">给分</a>
+                </div>
+                <div class="big" id="open">
+                    <a href="https://github.com/openwhu/OpenWHU">OpenWHU</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<footer>
+    <nav>
+        <ul>
+          <li class="active"><a href="index.html">Search</a></li>
+          <li><a href="xuexi.html">Learn</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="navi.html">Navigation</a></li>
+        </ul>
+    </nav>
+</footer>
 
 </html>

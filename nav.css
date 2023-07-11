@@ -1,0 +1,190 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-top: 100px;
+}
+body {
+    background-size: 100vh;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background: linear-gradient(20deg, #235dd2, #84a3df);
+    background-attachment: fixed;
+    text-align: center;
+    color: antiquewhite;
+    text-overflow: ellipsis;
+}
+p {
+    color: yellow;
+}
+p, p {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.topbar {
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(24, 10, 118, 0.8);
+    color: yellow;
+    padding: 1vh;
+    font-size: x-large;
+}
+.topbar div{
+    margin-right: 25px;
+}
+.topbar-title {
+    font-weight: bold;
+}
+.top-button {
+    color: #fff;
+    cursor: pointer;
+}
+.top-button:hover {
+    color:#235dd2;
+}
+
+.search {
+    margin-top: 25vh;
+    /* margin-bottom: 48vh; */
+    font-size: large;
+}
+.search input[type="text"] {
+    width: 80%;
+    height: 30px;
+    color: rgb(18, 0, 73);
+    max-width: 960px;
+    margin-bottom: 5px;
+}
+.search input[type="submit"] {
+    color:white;
+    height: 36px;
+    background-color:transparent;
+    border: none;
+    font-size: large;
+}
+.search input[type="submit"]:hover {
+    color: yellowgreen;
+}
+label:hover {
+    color: yellowgreen;
+}
+
+.info p{
+    color: antiquewhite;
+}
+.info p, p{
+    padding: 2px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 9vh;
+    width: 80vi;
+    height: 85vh;
+
+    margin-left: 20vi;
+    background-color: rgba(24, 10, 118, 0.8);
+    color:darkblue;
+    display: none;
+
+    transition: transform 0.3s ease-in-out;
+}
+.sidebar .row {
+    height: 20vh;
+    margin: 1vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.row div {
+    height: 19vh;
+    margin: 1vi;
+    background-color: rgb(63, 63, 52);
+    color: whitesmoke;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+}
+.row .big {
+    width: 50vi;
+}
+.row .small {
+    width: 25vi;
+}
+.row a {
+    padding-top: 8vh;
+    display: block;
+    font-size: x-large;
+    color:whitesmoke;
+    text-decoration: none;
+}
+.row #google {
+    background-color: rgb(200, 113, 0);
+}
+.row #bing {
+    background-color: rgb(8, 123, 247);
+}
+.row #gpt {
+    background-color: rgb(14, 156, 69);
+}
+.row #cg {
+    background-color: rgb(87, 87, 87);
+}
+.row #lib {
+    background-color: rgb(24, 95, 37);
+}
+.row #grade {
+    background-color: rgb(0, 70, 200);
+}
+.row #score {
+    background-color: rgb(112, 71, 16);
+}
+.row #open {
+    background-color: rgb(0, 200, 63);
+}
+
+footer {
+    background-color: transparent;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    position: fixed;
+    top: 92vh;
+    height: 8vh;
+    width: 100%;
+}
+nav ul {
+    background-color: #235dd2;
+    height: 8vh;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    background-color: rgba(24, 10, 118, 0.8);
+    font-size: large;
+    margin: 0 1px;
+    padding: 10px 15px;
+}
+
+nav a {
+    display: block;
+    width: 18vi;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav .active {
+    background-color:#235dd2;
+}
