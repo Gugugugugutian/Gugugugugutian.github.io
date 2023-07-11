@@ -22,7 +22,7 @@ function showSideBar() {
 
   if (sidebar.style.display != "block"){
     sidebar.style.display = "block";
-  }
+  } 
   else {
     sidebar.style.display = "none";
   }
