@@ -168,7 +168,7 @@ label:hover {
     height: 8vh;
     width: 100%;
 }
-nav ul {
+.butbar ul {
     background-color: #235dd2;
     height: 8vh;
     list-style-type: none;
@@ -177,19 +177,19 @@ nav ul {
     display: flex;
     justify-content: center;
 }
-nav li {
+.butbar li {
     background-color: rgba(24, 10, 118, 0.8);
     font-size: 2.5vh;
     margin: 0 1px;
     padding: 10px 15px;
 }
-nav a {
+.butbar a {
     display: block;
-    width: 18vi;
+    width: 22vi;
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
 }
-nav .active {
+.butbar .active {
     background-color:#235dd2;
 }
