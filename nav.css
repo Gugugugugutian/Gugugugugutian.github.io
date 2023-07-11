@@ -100,9 +100,9 @@ label:hover {
 
 .sidebar {
     position: fixed;
-    top: 9vh;
+    top: 8vh;
     width: 80vi;
-    height: 85vh;
+    height: 84vh;
 
     margin-left: 20vi;
     background-color: rgba(24, 10, 118, 0.8);
@@ -112,14 +112,14 @@ label:hover {
     transition: transform 0.3s ease-in-out;
 }
 .sidebar .row {
-    height: 20vh;
+    height: 19vh;
     margin: 1vh;
     background-color: transparent;
     display: flex;
     align-items: center;
 }
 .row div {
-    height: 19vh;
+    height: 18vh;
     margin: 1vi;
     background-color: rgb(63, 63, 52);
     color: whitesmoke;
