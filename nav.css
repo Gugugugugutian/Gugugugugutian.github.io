@@ -58,8 +58,8 @@ p, p {
 }
 
 .search {
-    position: absolute;
-    top: 50vh;
+    position: fixed;
+    top: 45vh;
     width: 100vi;
     /* margin-bottom: 48vh; */
     font-size: 3vh;
