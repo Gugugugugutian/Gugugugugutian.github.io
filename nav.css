@@ -7,7 +7,7 @@ body, html {
 }
 body {
     background-size: 100vh;
-    height: 100vh;
+    min-height: 92vh;
     background-repeat: no-repeat;
     background: linear-gradient(20deg, #235dd2, #84a3df);
     background-attachment: fixed;
@@ -28,7 +28,7 @@ p, p {
 .topbar {
     position: fixed;
     width: 100%;
-    height: 7vh;
+    height: 6vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
