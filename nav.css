@@ -58,10 +58,7 @@ p, p {
 }
 
 .search {
-    position: fixed;
-    top: 45vh;
-    width: 100vi;
-    /* margin-bottom: 48vh; */
+    margin-top: 30vh;
     font-size: 3vh;
 }
 .search input[type="text"] {
@@ -182,7 +179,7 @@ label:hover {
 }
 .butbar li {
     background-color: rgba(24, 10, 118, 0.8);
-    font-size: 2.5vh;
+    font-size: 2vh;
     margin: 0 1px;
     padding: 10px 15px;
 }
