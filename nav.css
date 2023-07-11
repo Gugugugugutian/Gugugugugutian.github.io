@@ -18,7 +18,6 @@ body {
 }
 p {
     color: yellow;
-    font-size: 2vh;
 }
 p, p {
     padding: 0;
@@ -89,6 +88,7 @@ label:hover {
     position: fixed;
     top: 9vh;
     width: 100vi;
+    font-size: 2vh;
     padding: 5px;
 }
 .info p{
