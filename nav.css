@@ -14,6 +14,7 @@ body {
     text-align: center;
     color: antiquewhite;
     text-overflow: ellipsis;
+    font-family: Arial, Helvetica, sans-serif;
     /* word-break: break-all; */
 }
 p {
@@ -34,13 +35,13 @@ p, p {
     background-color: rgba(24, 10, 118, 0.8);
     color: yellow;
     padding: 1vh;
-    font-size: x-large;
 }
 .topbar div{
     font-size: 4vh;
     margin-right: 25px;
 }
 .topbar-title {
+    font-size: 3vh;
     font-weight: bold;
 }
 .top-button {
@@ -102,74 +103,18 @@ label:hover {
     position: fixed;
     top: 8vh;
     width: 80vi;
-    height: 84vh;
+    height: 94vh;
 
     margin-left: 20vi;
-    background-color: rgba(24, 10, 118, 0.8);
-    color:darkblue;
+    background-color: black;
+    color:antiquewhite;
     display: none;
+}
 
-    transition: transform 0.3s ease-in-out;
-}
-.sidebar .row {
-    height: 19vh;
-    margin: 1vh;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-}
-.row div {
-    height: 18vh;
-    margin: 1vi;
-    background-color: rgb(63, 63, 52);
-    color: whitesmoke;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px;
-}
-.row .big {
-    width: 50vi;
-}
-.row .small {
-    width: 25vi;
-}
-.row a {
-    padding-top: 7vh;
-    padding-bottom: 6vh;
-    display: block;
-    font-size: 4vh;
-    color:whitesmoke;
-    text-decoration: none;
-}
-.row #google {
-    background-color: rgb(200, 113, 0);
-}
-.row #bing {
-    background-color: rgb(8, 123, 247);
-}
-.row #gpt {
-    background-color: rgb(14, 156, 69);
-}
-.row #cg {
-    background-color: rgb(87, 87, 87);
-}
-.row #lib {
-    background-color: rgb(24, 95, 37);
-}
-.row #grade {
-    background-color: rgb(0, 70, 200);
-}
-.row #score {
-    background-color: rgb(112, 71, 16);
-}
-.row #open {
-    background-color: rgb(0, 200, 63);
-}
 
 .foot {
     background-color: transparent;
     padding-top: 2vh;
-
     position: fixed;
     bottom: 0vh;
     height: 8vh;
@@ -193,7 +138,7 @@ label:hover {
 .butbar a {
     display: block;
     height: 8vh;
-    width: 22vi;
+    width: 20vi;
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
