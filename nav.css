@@ -165,9 +165,9 @@ label:hover {
 .foot {
     background-color: transparent;
     padding-top: 2vh;
-    padding-bottom: 2vh;
+
     position: fixed;
-    top: 92vh;
+    bottom: 0vh;
     height: 8vh;
     width: 100%;
 }
