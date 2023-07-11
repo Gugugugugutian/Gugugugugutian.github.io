@@ -84,6 +84,13 @@ label:hover {
     color: yellowgreen;
 }
 
+.info {
+    text-align: left;
+    position: fixed;
+    top: 9vh;
+    width: 100vi;
+    padding: 5px;
+}
 .info p{
     color: antiquewhite;
 }
