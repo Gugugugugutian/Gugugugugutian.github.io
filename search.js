@@ -20,7 +20,7 @@ function mail() {
 function showSideBar() {
   var sidebar = document.getElementById("sidebar");
 
-  if (sidebar.style.display === "none"){
+  if (sidebar.style.display != "block"){
     sidebar.style.display = "block";
   }
   else {
