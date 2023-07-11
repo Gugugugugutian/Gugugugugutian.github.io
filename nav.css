@@ -14,7 +14,7 @@ body {
     text-align: center;
     color: antiquewhite;
     text-overflow: ellipsis;
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 p {
     color: yellow;
@@ -58,7 +58,9 @@ p, p {
 }
 
 .search {
-    margin-top: 25vh;
+    position: absolute;
+    top: 50vh;
+    width: 100vi;
     /* margin-bottom: 48vh; */
     font-size: 3vh;
 }
