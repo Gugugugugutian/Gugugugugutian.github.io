@@ -102,7 +102,7 @@ label:hover {
 }
 
 #ltitle {
-    font-size: 2.5vh;
+    font-size: 2.3vh;
 }
 .sidebar {
     position: fixed;
@@ -147,6 +147,9 @@ label:hover {
 }
 .sidebar #ltitle {
     color: white;
+}
+.sidebar #line5 {
+    max-width: 18vi;
 }
 
 
