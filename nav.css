@@ -111,7 +111,7 @@ label:hover {
     height: 94vh;
 
     margin-left: 20vi;
-    background-color: black;
+    background-color: rgb(8, 40, 109);
     color:antiquewhite;
     display: none;
     padding: 1vi;
@@ -125,11 +125,17 @@ label:hover {
     padding: 1vh;
 }
 .sidebar td {
+    border-radius: 5px;
     margin: 2px;
     padding: 2px;
     width: 80vi;
     text-align: left;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(48, 44, 69);
+    border: 1px solid aliceblue;
+}
+.sidebar td:hover {
+    border: 2px solid white;
+    background-color: #1b57d0;
 }
 .sidebar p {
     font-size: 2vh;
