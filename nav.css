@@ -19,6 +19,7 @@ body {
 }
 p {
     color: yellow;
+    user-select: none;
 }
 p, p {
     padding: 0;
@@ -62,10 +63,11 @@ p, p {
     font-size: 3vh;
 }
 .search input[type="text"] {
+    border-radius: 1vh;
     width: 80%;
-    font-size: 4vh;
+    font-size: 3.5vh;
     height: 6vh;
-    color: rgb(18, 0, 73);
+    color: rgb(93, 57, 199);
     max-width: 800px;
     margin-bottom: 5px;
     font-family: Arial, Helvetica, sans-serif;
@@ -99,6 +101,9 @@ label:hover {
     padding: 2px;
 }
 
+#ltitle {
+    font-size: 3vh;
+}
 .sidebar {
     position: fixed;
     top: 8vh;
@@ -109,6 +114,38 @@ label:hover {
     background-color: black;
     color:antiquewhite;
     display: none;
+    padding: 1vi;
+}
+.sidebar tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 76vi;
+    height: 12vh;
+    padding: 1vh;
+}
+.sidebar td {
+    margin: 2px;
+    padding: 2px;
+    width: 80vi;
+    text-align: left;
+    background-color: rgb(40, 40, 40);
+}
+.sidebar p {
+    font-size: 2vh;
+    color: #8da3d3;
+    float: left;
+    padding: 2px;
+    overflow: hidden;
+}
+.sidebar a {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    height: 12vh;
+}
+.sidebar #ltitle {
+    color: white;
 }
 
 
