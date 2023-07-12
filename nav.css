@@ -137,6 +137,7 @@ label:hover {
     float: left;
     padding: 2px;
     overflow: hidden;
+    text-overflow: clip;
 }
 .sidebar a {
     display: flex;
