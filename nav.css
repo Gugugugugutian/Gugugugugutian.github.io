@@ -5,6 +5,7 @@ body, html {
 .container {
     padding-top: 11vh;
 }
+
 body {
     background-size: 100vh;
     min-height: 92vh;
@@ -16,6 +17,10 @@ body {
     text-overflow: ellipsis;
     font-family: Arial, Helvetica, sans-serif;
     /* word-break: break-all; */
+}
+#navipage {
+    background: #fff;
+    background-color: black;
 }
 p {
     color: yellow;
@@ -56,8 +61,8 @@ p, p {
 .main {
     font-size: 2vh;
     margin-top: 7vh;
+    margin-bottom: 9vh;
 }
-
 .search {
     margin-top: 30vh;
     font-size: 3vh;
@@ -154,10 +159,93 @@ label:hover {
 .sidebar #ltitle {
     color: white;
 }
-.sidebar #line5 {
-    max-width: 18vi;
+.sidebar #ltitle {
+    max-width: 15vi;
 }
 
+
+.log {
+    margin: 1vi;
+    max-width: 900px;
+    align-items: center;
+    background-color: rgba(24, 10, 118, 0.4);
+}
+.log h3{
+    padding-left: 5px;
+    padding-bottom: 1px;
+    color: aliceblue;
+    text-align: left;
+    border-bottom: solid 1px snow;
+}
+.log ul {
+    text-align: left;
+    list-style-type: none;
+    font-size: 2vh;
+    padding-left: 3px;
+}
+.log li {
+    padding: 2px;
+    margin-left: 5px;
+    text-align: left;
+    margin-bottom: 4px;
+}
+.log0 a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 12vi;
+    max-width: 100px;
+    height: 2.5vh;
+    background-color: peru;
+    color: antiquewhite;
+    border-radius: 1vi;
+    margin-right: 1.2vi;
+}
+.log0 a:hover {
+    background-color: orange;
+}
+.log tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 92vi;
+    height: 12vh;
+    padding: 1vh;
+    max-width: 860px;
+}
+.log td {
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+    width: 80vi;
+    text-align: left;
+    background-color: rgb(48, 44, 69);
+    border: 1px solid aliceblue;
+}
+.log td:hover {
+    border: 2px solid white;
+    background-color: peru;
+}
+.log p {
+    font-size: 2vh;
+    color: rgba(153, 255, 255, 0.5);
+    float: left;
+    padding: 2px;
+    overflow: hidden;
+    text-overflow: clip;
+}
+.log #ltitle {
+    font-size: 2.5vh;
+}
+.blnav a {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    height: 12vh;
+}
+.log #ltitle {
+    color: white;
+}
 
 .foot {
     background-color: transparent;
