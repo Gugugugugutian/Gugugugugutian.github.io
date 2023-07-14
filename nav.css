@@ -160,7 +160,7 @@ label:hover {
     color: white;
 }
 .sidebar #ltitle {
-    max-width: 15vi;
+    max-width: 18vi;
 }
 
 
@@ -188,22 +188,26 @@ label:hover {
     margin-left: 5px;
     text-align: left;
     margin-bottom: 4px;
-    font-size: 2.5vh;
+    font-size: 2vh;
 }
 .log0 a {
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    width: 18vi;
+    width: 21vi;
     max-width: 150px;
-    height: 2.5vh;
+    height: 2vh;
+    font-size: 1.5vh;
     background-color: peru;
     color: antiquewhite;
     border-radius: 1vi;
     margin-right: 1.2vi;
+    border: 1px solid #ffffff;
+    overflow: hidden;
 }
 .log0 a:hover {
-    background-color: orange;
+    background-color: black;
+    color: white;
 }
 .log tr {
     display: flex;
