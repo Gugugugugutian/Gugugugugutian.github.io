@@ -166,10 +166,16 @@ label:hover {
 
 
 .log {
-    margin: 1vi;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vi;
     max-width: 900px;
     align-items: center;
     background-color: rgba(24, 10, 118, 0.4);
+}
+#logm {
+    width: 100%;
+    align-items: center;
 }
 .log h3{
     padding-left: 5px;
