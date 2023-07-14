@@ -98,6 +98,7 @@ label:hover {
     width: 100vi;
     font-size: 2vh;
     padding: 5px;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 .info p{
     color: antiquewhite;
