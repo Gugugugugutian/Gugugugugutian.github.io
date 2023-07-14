@@ -188,13 +188,14 @@ label:hover {
     margin-left: 5px;
     text-align: left;
     margin-bottom: 4px;
+    font-size: 2.5vh;
 }
 .log0 a {
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    width: 12vi;
-    max-width: 100px;
+    width: 18vi;
+    max-width: 150px;
     height: 2.5vh;
     background-color: peru;
     color: antiquewhite;
