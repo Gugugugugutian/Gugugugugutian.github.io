@@ -14,7 +14,7 @@ function switchSearchEngine() {
 }
 
 function mail() {
-  window.location.href = "mailto:gugugugugutian@outlook.com";
+  window.location.href = "mailto:gugugugugutian@outlook.com?subject=Mail%20from%20personal%20Github%20website";
 }
 
 function showSideBar() {
