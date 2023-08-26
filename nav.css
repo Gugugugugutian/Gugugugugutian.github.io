@@ -10,7 +10,7 @@ body {
     background-size: 100vh;
     min-height: 92vh;
     background-repeat: no-repeat;
-    background: linear-gradient(20deg, #235dd2, #84a3df);
+    background: linear-gradient(20deg, #214283, #225bcd);
     background-attachment: fixed;
     text-align: center;
     color: antiquewhite;
@@ -98,7 +98,7 @@ label:hover {
     width: 100vi;
     font-size: 2vh;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .info p{
     color: antiquewhite;
@@ -180,6 +180,7 @@ label:hover {
 .log h3{
     padding-left: 5px;
     padding-bottom: 1px;
+    margin-bottom: 1vi;
     color: aliceblue;
     text-align: left;
     border-bottom: solid 1px snow;
@@ -187,15 +188,17 @@ label:hover {
 .log ul {
     text-align: left;
     list-style-type: none;
-    font-size: 2vh;
+    font-size: 2.5vh;
     padding-left: 3px;
 }
 .log li {
     padding: 2px;
     margin-left: 5px;
     text-align: left;
-    margin-bottom: 4px;
-    font-size: 2vh;
+    margin-bottom: 0.5vh;
+    font-size: 2.6vh;   
+    border-bottom: dotted 0.5px darkgray;
+    color: darkgrey;
 }
 .log0 a {
     text-decoration: none;
@@ -203,9 +206,9 @@ label:hover {
     text-align: center;
     width: 21vi;
     max-width: 150px;
-    height: 2vh;
-    font-size: 1.5vh;
-    background-color: peru;
+    height: 2.8vh;
+    font-size: 2.25vh;
+    background-color: rgb(48, 44, 69);
     color: antiquewhite;
     border-radius: 1vi;
     margin-right: 1.2vi;
@@ -213,8 +216,7 @@ label:hover {
     overflow: hidden;
 }
 .log0 a:hover {
-    background-color: black;
-    color: white;
+    background-color: peru;
 }
 .log tr {
     display: flex;
