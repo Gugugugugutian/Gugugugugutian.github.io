@@ -256,7 +256,7 @@ label:hover {
     font-size: 2.5vh;
     padding: 0.5vh;
     padding-left: 3vi;
-    padding-right: 3vi;
+    /* padding-right: 3vi; */
     text-align: left;
 }
 .blnav a {

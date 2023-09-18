@@ -60,23 +60,7 @@
                     }
                 </script>
                 
-                <p id="ip-info">Loading...</p>
-                <script>
-                    // 使用fetch API获取当前IP地址和归属地
-                    fetch("https://ipapi.co/json/")
-                    .then(response => response.json())
-                    .then(data => {
-                        // 更新段落中的内容，显示IP地址和归属地
-                        const ipInfo = document.getElementById("ip-info");
-                        ipInfo.textContent =
-                        `Your current ip location is: ${data.city}, ${data.region}, ${data.country}.`;
-                        // `Your current ip is <${data.ip}>, locating in: ${data.city}, ${data.region}, ${data.country}.`;
-                    })
-                    .catch(error => {
-                        // 如果发生错误，显示错误信息
-                        document.getElementById('ipinfo').innerHTML = 'Error: Could not retrieve IP address information.';
-                    });
-                </script>
+                <p>声明：本页面无店铺推广，且信息具有时效性。</p>
             </div>
 
             <div class="log">
@@ -95,17 +79,74 @@
             </div>
 
             <div class="log">
-                <h3>这里有什么？</h3>
+                <h3>来菜</h3>
                 <div id="textdiv">
-                    武汉市，特别是武汉大学附近比较好吃的东西。<br>
-                    暂时没有分类，随意排序。以后计划搞分类/分地区的筛选功能。
+                    知名连锁湖北菜，拥有多家分店。<br>
+                    武汉市洪山区珞喻路35号银泰创意城9层9F003<br>
+                    特别推荐：藕汤、粉蒸肉、菱角红烧肉。
                 </div>
             </div>
 
             <div class="log">
-                <h3>吃什么？</h3>
+                <h3>卯时暄</h3>
                 <div id="textdiv">
-                    这个网站可能马上就要完成了。 
+                    知名社区面包店，出品稳定，质量高，种类丰富。<br>
+                    武汉市洪山区徐东路23号鹏程花园5栋1层楼8号<br>
+                    特别推荐：欧包、吐司类、中式点心、日式面包、贝果。 
+                </div>
+            </div>
+
+            <div class="log">
+                <h3>豆蔻面包公司</h3>
+                <div id="textdiv">
+                    法式欧包为主的面包店，有硬欧包。<br>
+                    武汉市武昌区友谊大道305号水岸国际漫时区商业街1号楼一层<br>
+                    特别推荐：欧包、碱水面包、咸味面包。 
+                </div>
+            </div>
+
+            <div class="log">
+                <h3>Team One</h3>
+                <div id="textdiv">
+                    一家新开的综合面包店，可选择的品类丰富，价格合理，品质非常赞。<br>
+                    武汉市江汉区越秀金融汇4期10商-9Team one stone契心面包店<br>
+                    特别推荐：欧包、恰巴塔。
+                </div>
+            </div>
+
+            <div class="log">
+                <h3>5号面包商店</h3>
+                <div id="textdiv">
+                    武汉著名高级面包店，日式面包非常值得购买，虽然贵。<br>
+                    武汉市江汉区西北湖路25号<br>
+                    特别推荐：日式面包、中式点心、西式点心。
+                </div>
+            </div>
+
+            <div class="log">
+                <h3>至爱法麦</h3>
+                <div id="textdiv">
+                    武汉知名老牌面包店，产品以法式为主。有值得尝试的品类。<br>
+                    武汉市江汉区西北湖路25号柠檬中心正门<br>
+                    特别推荐：欧包，黄油起酥类，司康。 
+                </div>
+            </div>
+
+            <div class="log">
+                <h3>烘焙日报</h3>
+                <div id="textdiv">
+                    性价比很高的社区面包店，出品也非常不错。<br>
+                    武汉市江岸区建设大道1111号利腾国际2栋1层门面<br>
+                    特别推荐：日式面包、软欧包。 
+                </div>
+            </div>
+
+            <div class="log">
+                <h3>LING</h3>
+                <div id="textdiv">
+                    法式甜点专门店，也有法餐。<br>
+                    武汉市江汉区唐家墩街街道九头鸟小区内LING甜点店<br>
+                    特别推荐：法式甜点、西式点心、黄油起酥类。
                 </div>
             </div>
 

@@ -1,0 +1,72 @@
+body {
+    font-size: 24px;
+    /* word-break: break-all; */
+    text-overflow: ellipsis;
+    min-height: 100vh;
+    background: linear-gradient(200deg, #0c3483, #a2b6df);
+    text-align: center;
+    color: antiquewhite;
+}
+div {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgba(0,0,0,0.3);
+}
+button, input[type="text"], input[type="submit"], input[type="password"] {
+    margin: 14px;
+    min-height: 72px;
+    width: 75%;
+    font-size: 40px;
+}
+button, input[type="submit"] {
+    color: azure;
+    background-color: rgb(134, 77, 255);
+}
+input[type="radio"] {
+    width: 28px;
+    height: 28px;
+}
+
+p {
+    font-size: 40px;
+}
+a {
+    color: blanchedalmond;
+}
+h1 {
+    font-size: 60px;
+    color: yellow;
+}
+h2,h3 {
+    font-size: 48px;
+}
+h4 {
+    font-size: 40px;
+}
+table {
+    font-size: 36px;
+    width: 90%;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    table-layout: fixed;
+}
+td {
+    min-width: 15%;
+    max-height: 15%;
+    overflow-y: hidden;
+    word-break: break-all; 
+    word-wrap:break-word;
+    text-overflow: ellipsis;
+}
+form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 40px;
+}
+dialog {
+    background-color: rgba(255,255,255,0.8);
+}
