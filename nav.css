@@ -168,12 +168,14 @@ label:hover {
 .log {
     margin-top: 1vi;
     max-width: 900px;
-    align-items: center;
+    display: inline-block;
     background-color: rgba(14, 62, 74, 0.4);
 }
 #logm {
-    width: 100%;
+    width: 100vi;
     align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 .log h3{
     font-size: 3vh;
