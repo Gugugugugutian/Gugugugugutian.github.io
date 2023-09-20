@@ -167,15 +167,14 @@ label:hover {
 
 .log {
     margin-top: 1vi;
+    width: 95vi;
     max-width: 900px;
     display: inline-block;
     background-color: rgba(14, 62, 74, 0.4);
 }
 #logm {
-    width: 100vi;
+    width: 96vi;
     align-items: center;
-    justify-content: center;
-    align-content: center;
 }
 .log h3{
     font-size: 3vh;
@@ -260,6 +259,9 @@ label:hover {
     padding-left: 3vi;
     /* padding-right: 3vi; */
     text-align: left;
+}
+#textdiv a {
+    color: white;
 }
 .blnav a {
     display: flex;

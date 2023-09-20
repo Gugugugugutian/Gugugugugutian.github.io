@@ -7,7 +7,20 @@
   <script src="https://cdn.staticfile.org/ionic/1.3.2/js/ionic.bundle.min.js"></script> -->
   <meta charset="utf-8">
   <title>Learnin English with gugugugugutian</title>
-  <script src="search.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="search.js"></script>
+    <style>
+		audio {
+			width: 90vi;
+		}
+        #playadjust {
+            width: 60vi;
+            margin-left: 20vi;
+        }
+        #adjbutm5, #adjbut5, #adjbutm10, #adjbut10 {
+            width: 80%;
+        }
+	</style>
 </head>
 
 <body>
@@ -67,9 +80,99 @@
   
     <div class="container">
         <div class="main">
-            <div class="search">
-                该网页版本更新暂未完成
-                请点击下边栏切换其他网页
+            <input type="text" id="fileInput" placeholder="Track ID">
+	        <button id="playButton">Load</button>
+
+	        <audio id="audio" controls>
+		        <source id="source" type="audio/mp3">
+		        Your browser does not support the audio element.
+	        </audio>
+
+            <script>
+                const audio = document.getElementById("audio");
+                const source = document.getElementById("source");
+                const fileInput = document.getElementById("fileInput");
+                const playButton = document.getElementById("playButton");
+                playButton.addEventListener("click", () => {
+                    const fileName = fileInput.value.trim();
+                    if (!fileName) return;
+                    source.src = "audio/Track "+fileName+".mp3";
+                    if (audio.readyState === 0) {
+                        audio.load();
+                    }
+                    audio.play()
+                        .catch(error => {
+                            alert(`Failed to play audio. Maybe there is a mistake on the filename.`);
+                        });
+                });
+            </script>
+
+            <table id="playadjust">
+                <tr>
+                    <td>
+                        <button id="adjbutm10">-10s</button>
+                    </td>
+                    <td>
+                        <button id="adjbutm5">-05s</button>
+                    </td>
+                    <td>
+                        <button id="adjbut5">+05s</button>
+                    </td>
+                    <td>
+                        <button id="adjbut10">+10s</button>
+                    </td>
+                </tr>
+            </table>
+            <script>
+                adjbut5.addEventListener("click",()=>{
+                    audio.currentTime+=5;
+                });
+                adjbut10.addEventListener("click",()=>{
+                    audio.currentTime+=10;
+                });
+                adjbutm5.addEventListener("click",()=>{
+                    audio.currentTime-=5;
+                });
+                adjbutm10.addEventListener("click",()=>{
+                    audio.currentTime-=10;
+                });
+            </script>
+
+            <div class="log">
+                <h3>About this page</h3>
+                <div id="textdiv">
+                    This is an audio player online, where you can practice your English
+                    listening skills. <br>
+                    The materials and tracks might be outdated. I will update it when I 
+                    need it. <br>
+                    NOT FOR COMMERCIAL! Please only use it for personal study. <br>
+                    仅供学习使用，如有侵权请点击左上角联系删除。<br>
+                </div>
+            </div>
+
+            <div class="log">
+                <h3>How to use?</h3>
+                <div id="textdiv">
+                    There are some audio tracks from toefl official. 
+                    Each of the tracks has a specific ID consists of numbers and characters. 
+                    The track will be played after you enter corresponding ID and click the 
+                    "Load" button. <br>
+                    If you enter number 1 to 16, the audio tracks of official Listening 
+                    Practice Set will be played. 
+                    If you enter number 1t to 6t, the audio tracks of official Online
+                    Practice Set will be played. 
+                </div>
+            </div>
+
+            <div class="log">
+                <h3>Resources</h3>
+                <div id="textdiv">
+                    1-16 Plays corresponding Tracks of official Listening Practice 
+                    Set. <a href="doc/listening_practice_sets.pdf"> Download</a> here.<br>
+                    1t-6t Plays corresponding Tracks of official Practice Test. <a href="doc/TOEFL iBT Paper Edition Practice Test.pdf"> 
+                    Download test paper </a>here and <a href="doc/Listening Transcripts.pdf">listening transcripts </a> here.<br>
+                    You may also need <a href="doc/Writing Transcript.pdf">writing transcripts </a> here.
+                </div>
             </div>
         </div>
 
