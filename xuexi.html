@@ -8,6 +8,7 @@
   <meta charset="utf-8">
   <title>Study with gugugugugutian</title>
   <script src="search.js"></script>
+  <script src="xuexi-setting.js"></script>
   <style>
     .search a {
         color: aquamarine;
@@ -15,6 +16,32 @@
     }
     .search a:hover {
         color: yellow;
+    }
+
+    .setting-table {
+        margin-top: 1vh;
+        width: 95vi;
+        max-width: 900px;
+        align-items: center;
+    }
+    .setting-table table {
+        width: 100%;
+    }
+    .setting-table button {
+        background-color: transparent;
+        border: 1px solid snow;
+        color: snow;
+        font-size: 2vh;
+        height: 5vh;
+        width: 40vi;
+        max-width: 440px;
+    }
+    .setting-table button:hover {
+        background-color: green;
+    }
+
+    #nimp {
+        display: none;
     }
   </style>
 </head>
@@ -79,20 +106,65 @@
                 </script>
             </div>
 
-            <div class="log">
-                <h3>Java Web 项目学习</h3>
+            <div class="log" id="imp">
+                <h3>找电子书</h3>
                 <div id="textdiv">
-                    自学Web项目开发的前后端知识。 
+                    知识就是用来共享的。这怎么能叫盗版呢？
                 </div>
                 <ul class="log0">
                     <!-- 列表形式展示的导航 -->
                     <!-- <li><a href="linker">Click</a>点击进入</li> -->
-                    <li><a href="https://spring.io/quickstart">Click</a>Springboot起步导览</li>
-                    <!-- <li><a href="linker">Click</a>点击进入</li> -->
+                    <li><a href="https://annas-archive.org/">Click</a>annas-archive备用电子书库</li>
+                    <li><a href="https://singlelogin.se/">Click</a>Zlibrary的最新链接</li>
                 </ul>
             </div>
 
-            <div class="log">
+            <div class="log" id="imp">
+                <h3>数据库竞赛相关链接</h3>
+                <div id="textdiv">
+                    一次加10分的机会，能不能彻底改变本科阶段经历？
+                </div>
+                <ul class="log0">
+                    <!-- 列表形式展示的导航 -->
+                    <li><a href="https://oceanbase.github.io/miniob/miniob-introduction.html">初赛</a>Miniobs教学导览页面</li>
+                    <li><a href="https://open.oceanbase.com/user/mycompetition">USER</a>竞赛用户主页</li>
+                    <li><a href="https://open.oceanbase.com/train?questionId=600004">SUBMIT</a>初赛试题提交测试</li>
+                </ul>
+            </div>
+
+            <div class="log" id="imp">
+                <h3>Java Web 项目学习</h3>
+                <div id="textdiv">
+                    自学Web项目开发的前/后端知识。 
+                </div>
+                <ul class="log0">
+                    <!-- 列表形式展示的导航 -->
+                    <!-- <li><a href="linker">Click</a>点击进入</li> -->
+                    <li><a href="https://spring.io/quickstart">SPRING</a>Springboot起步导览</li>
+                    <li><a href="https://www.runoob.com/html/html-tutorial.html">HTML</a>菜鸟html教程链接</li>
+                </ul>
+            </div>
+
+            <!-- 这下面有一些是不重要内容 -->
+            <!-- 不重要内容默认隐藏，点击按钮后可显示 -->
+
+            <div class="setting-table">
+                <p style="color: wheat;">
+                    如果点击<b>全部显示</b>按钮，一些过时的内容将出现
+                </p>
+                <table>
+                    <tr>
+                        <td>
+                            <button value="Display all" onclick="displayAll()">全部显示</button> 
+                        </td>
+                        <td>
+                            <button value="Display important" onclick="displayImportant()">不显示不重要内容（默认）</button> 
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="log" id="nimp">
                 <h3>Python Web 项目学习</h3>
                 <div id="textdiv">
                     自学基于Django框架的Python Web项目开发。 
@@ -104,20 +176,7 @@
                 </ul>
             </div>
 
-            <div class="log">
-                <h3>找电子书</h3>
-                <div id="textdiv">
-                    寻找一些电子书资源的链接
-                </div>
-                <ul class="log0">
-                    <!-- 列表形式展示的导航 -->
-                    <!-- <li><a href="linker">Click</a>点击进入</li> -->
-                    <li><a href="https://annas-archive.org/">Click</a>annas-archive备用电子书库</li>
-                    <li><a href="https://singlelogin.se/">Click</a>Zlibrary的最新链接</li>
-                </ul>
-            </div>
-
-            <div class="log">
+            <div class="log" id="nimp">
                 <h3>英语打卡web应用</h3>
                 <div id="textdiv">
                     使用php等技术自建英语打卡学习平台。（已下线）
@@ -130,7 +189,7 @@
                 </ul>
             </div>
 
-            <div class="log">
+            <div class="log" id="imp">
                 <h3>吃什么？</h3>
                 <div id="textdiv">
                     学习前先吃饱。这里有一些个人比较喜欢的餐饮店铺推荐。
