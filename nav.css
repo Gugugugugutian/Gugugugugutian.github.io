@@ -1,3 +1,4 @@
+/* 基本页面的样式 */
 body, html {
     margin: 0;
     padding: 0;
@@ -5,7 +6,6 @@ body, html {
 .container {
     padding-top: 11vh;
 }
-
 body {
     background-size: 100vh;
     min-height: 92vh;
@@ -29,7 +29,7 @@ p, p {
     padding: 0;
     margin: 0;
 }
-
+/* 顶部栏的样式 */
 .topbar {
     position: fixed;
     width: 100%;
@@ -56,12 +56,30 @@ p, p {
 .top-button:hover {
     color:#005c3f;
 }
-
+/* 主要部分的样式 */
 .main {
     font-size: 2vh;
     margin-top: 7vh;
     margin-bottom: 9vh;
 }
+.info {
+    text-align: left;
+    position: fixed;
+    top: 9vh;
+    width: 100vi;
+    font-size: 2vh;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.info p{
+    color: antiquewhite;
+}
+.info p, p{
+    padding: 2px;
+}
+
+/* 搜索部分的样式 */
+/* 许多页面没有用到这一样式，可以整合删除 */
 .search {
     margin-top: 30vh;
     font-size: 3vh;
@@ -90,22 +108,7 @@ label:hover {
     color: yellowgreen;
 }
 
-.info {
-    text-align: left;
-    position: fixed;
-    top: 9vh;
-    width: 100vi;
-    font-size: 2vh;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.info p{
-    color: antiquewhite;
-}
-.info p, p{
-    padding: 2px;
-}
-
+/* 侧边栏的样式 */
 #ltitle {
     font-size: 2.3vh;
 }
@@ -164,7 +167,8 @@ label:hover {
     max-width: 18vi;
 }
 
-
+/* 对话框形式的样式 */
+/* 一些页面没有用到这一元素 */
 .log {
     margin-top: 1vi;
     width: 95vi;
@@ -273,6 +277,7 @@ label:hover {
     color: white;
 }
 
+/* 底部栏的样式 */
 .foot {
     background-color: transparent;
     padding-top: 2vh;
