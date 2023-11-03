@@ -1,0 +1,5 @@
+com\example\crud_demo\service\UserService.class
+com\example\crud_demo\CrudDemoApplication.class
+com\example\crud_demo\control\UserCtrl.class
+com\example\crud_demo\mapper\UserMapper.class
+com\example\crud_demo\entity\User.class
