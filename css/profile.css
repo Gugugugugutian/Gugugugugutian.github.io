@@ -41,3 +41,23 @@
     text-decoration: none;
     color: yellow;
 }
+.intro-content table {
+    border-collapse: collapse;
+    font-size: large;
+    width: 100%;
+    padding: 3px;
+    color: wheat;
+    margin-bottom: 1vh;
+}
+.intro-content table .head {
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
+.intro-content td {
+    border: 1px solid wheat;
+    padding: 3px;
+}
+.intro-content td, td {
+    margin: 0;
+}
