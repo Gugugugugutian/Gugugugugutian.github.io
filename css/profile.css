@@ -1,4 +1,8 @@
+.main {
+    align-items: center;
+}
 .intro {
+    /* max-width: 600px; */
     color: black;
     border-radius: 3vi;
     padding: 1vi;
