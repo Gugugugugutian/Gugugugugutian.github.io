@@ -1,1 +1,0 @@
-import{_ as e,c,o}from"./index-CQY5yDxU.js";const s={},t={class:"profile-main"};function r(_,a){return o(),c("div",t," 敬请期待 ")}const i=e(s,[["render",r],["__scopeId","data-v-63cee120"]]);export{i as default};
